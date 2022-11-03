@@ -19,22 +19,6 @@ Route::get('/', function () {
 });
 
 
-
-// Route::controller(LivreController::class)->group(function () {
-
-//     Route::get('/livre', 'index')->name('livre.index');
-//     Route::get('/livre/create', 'create')->name('livre.create');
-//     Route::get('/livre/{id}', 'show')->name('livre.show');
-//     Route::get('/livre/{id}/edit', 'edit')->name('livre.edit');
-
-
-//     Route::post('/livre', 'store');
-//     Route::patch('/livre/{id}', 'update');
-//     Route::delete('/livre/{id}', 'destroy');
-
-// });
-
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
