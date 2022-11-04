@@ -24,6 +24,7 @@ class LivreFactory extends Factory
             'desc' => $this->faker->text(),
             'author' => $this->faker->name(6),
             'price' => $this->faker->randomFloat(2, 0, 100),
+            'image' => $this->faker->imageUrl(360, 360, 'animals', true, 'dogs', true, 'jpg'),
         ];
     }
 }
