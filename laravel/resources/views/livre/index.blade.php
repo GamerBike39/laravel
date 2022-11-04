@@ -8,6 +8,7 @@
         <ul>
             @foreach ($livres as $livre)
                 <li><a href="{{ route('livre.show', $livre->id) }}">{{ $livre->title }}</a></li>
+                {{-- <li><a href="{{ route('livre.show', [$livre->id, $livre->slug]) }}">{{ $livre->title }}</a></li> --}}
             @endforeach
         </ul>
 

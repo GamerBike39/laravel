@@ -60,6 +60,7 @@ Route::middleware('auth')->group(function () {
                  Route::get('/livre', 'index')->name('livre.index');
                  Route::get('/livre/create', 'create')->name('livre.create');
                  Route::get('/livre/{id}', 'show')->name('livre.show');
+                //  Route::get('/livre/{id}/{slug?}', 'show')->name('livre.show');
                  Route::get('/livre/{id}/edit', 'edit')->name('livre.edit');
 
 
