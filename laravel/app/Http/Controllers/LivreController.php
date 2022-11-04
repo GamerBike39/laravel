@@ -65,7 +65,7 @@ class LivreController extends Controller
         ]);
 
         $livre->save();
-        return redirect('/')->with('success', 'Livre enregistré!');
+        return redirect('/livre')->with('success', 'Livre enregistré!');
     }
 
 
@@ -104,7 +104,7 @@ class LivreController extends Controller
         // $livre->image = $request->get('image');
         $livre->save();
 
-        return redirect('/')->with('success', 'Livre modifié!');
+        return redirect('/livre')->with('success', 'Livre modifié!');
     }
 
     /**
@@ -117,7 +117,7 @@ class LivreController extends Controller
         $livre = Livre::findOrFail($id);
         $livre->delete();
 
-        return redirect('/')->with('success', 'Livre supprimé!');
+        return redirect('/livre')->with('success', 'Livre supprimé!');
     }
 
 
